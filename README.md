@@ -1,24 +1,7 @@
-# README
+# Check Please
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## A point of sale system built in Rails.
 
-Things you may want to cover:
+### Coming soon...
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Stories in Ready](https://badge.waffle.io/bermannoah/check-please.svg?label=ready&title=Ready)](http://waffle.io/bermannoah/check-please)

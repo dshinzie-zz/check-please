@@ -15,7 +15,16 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="login-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+          <li>
+            <form action="/items" method="GET" class="form-inline navbar-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="item" placeholder="search!" id="identifierSubmit"/>
+              </div>
+              <button type="submit" class="btn btn-default" id="buttonPress">submit</button>
+            
+          </li>
 
+    
           <% if logged_in? %>
             <li><p class="logged-in-text-style">Logged in as <%= link_to current_user.username, dashboard_path %> | <%= link_to "Logout", logout_path, method: :delete %> </p></li>
             <%= link_to "Orders", orders_path, class: "admin-dashboard-button btn btn-default" %>

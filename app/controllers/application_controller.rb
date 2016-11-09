@@ -23,4 +23,9 @@ class ApplicationController < ActionController::Base
   def current_admin?
     current_user && current_user.admin?
   end
+  
+  def find_item
+    @item = Item.find_by(name: params[:item])
+    return @item.id
+  end
 end

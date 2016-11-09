@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    
     <%= render partial: "shared/navbar" %>
     
     <% flash.each do |type, message| %>
@@ -22,17 +23,17 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
-<script>
-  var button = document.getElementById("buttonPress");
-  button.addEventListener("click", relocate)
-  function relocate() {
-    var input = document.getElementById("identifierSubmit");
-    event.preventDefault()
-    window.location.pathname = "/items/" + input.value;
-  }
-</script>
+    <script>
+      var button = document.getElementsByName("buttonPress");
+      button.addEventListener("click", relocate)
+      function relocate() {
+        var input = document.getElementsByName("identifierSubmit");
+        event.preventDefault()
+        window.location.pathname = "/items/:id" + input.value;
+      }
+    </script>
 
 
   </body>
